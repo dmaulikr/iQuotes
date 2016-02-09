@@ -10,4 +10,3 @@ end
 target 'iQuotesTests' do
     testing_pods
 end
-

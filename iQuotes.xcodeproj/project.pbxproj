@@ -12,7 +12,7 @@
 		0A38BC811C6940F80069F936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A38BC7F1C6940F80069F936 /* Main.storyboard */; };
 		0A38BC831C6940F90069F936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A38BC821C6940F90069F936 /* Assets.xcassets */; };
 		0A38BC861C6940F90069F936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A38BC841C6940F90069F936 /* LaunchScreen.storyboard */; };
-		0A38BC911C6940F90069F936 /* iQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BC901C6940F90069F936 /* iQuotesTests.swift */; };
+		0A38BC911C6940F90069F936 /* QuoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BC901C6940F90069F936 /* QuoteSpec.swift */; };
 		E2BB1B0FC13040ABB8A9846D /* Pods_iQuotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F47B35D9D456F4566EF660 /* Pods_iQuotesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		0A38BC851C6940F90069F936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A38BC871C6940F90069F936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A38BC8C1C6940F90069F936 /* iQuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A38BC901C6940F90069F936 /* iQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iQuotesTests.swift; sourceTree = "<group>"; };
+		0A38BC901C6940F90069F936 /* QuoteSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteSpec.swift; sourceTree = "<group>"; };
 		0A38BC921C6940F90069F936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40F47B35D9D456F4566EF660 /* Pods_iQuotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iQuotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD93F09AFA6D4D4A6245D89 /* Pods-iQuotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iQuotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iQuotesTests/Pods-iQuotesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		0A38BC8F1C6940F90069F936 /* iQuotesTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A38BC901C6940F90069F936 /* iQuotesTests.swift */,
+				0A38BC901C6940F90069F936 /* QuoteSpec.swift */,
 				0A38BC921C6940F90069F936 /* Info.plist */,
 			);
 			path = iQuotesTests;
@@ -280,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A38BC911C6940F90069F936 /* iQuotesTests.swift in Sources */,
+				0A38BC911C6940F90069F936 /* QuoteSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
