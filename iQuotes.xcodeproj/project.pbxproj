@@ -15,6 +15,7 @@
 		0A38BC911C6940F90069F936 /* QuoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BC901C6940F90069F936 /* QuoteSpec.swift */; };
 		0A38BCA61C69C2880069F936 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BCA31C69C2880069F936 /* Quote.swift */; settings = {ASSET_TAGS = (); }; };
 		0A38BCA71C69C2880069F936 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A38BCA51C69C2880069F936 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		0A38BCAA1C6BB9CA0069F936 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BCA91C6BB9CA0069F936 /* README.md */; settings = {ASSET_TAGS = (); }; };
 		E2BB1B0FC13040ABB8A9846D /* Pods_iQuotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F47B35D9D456F4566EF660 /* Pods_iQuotesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		0A38BC921C6940F90069F936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A38BCA31C69C2880069F936 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		0A38BCA51C69C2880069F936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A38BCA91C6BB9CA0069F936 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		40F47B35D9D456F4566EF660 /* Pods_iQuotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iQuotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD93F09AFA6D4D4A6245D89 /* Pods-iQuotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iQuotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iQuotesTests/Pods-iQuotesTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6EAB653B85F4C6B6DD44998 /* Pods-iQuotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iQuotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iQuotesTests/Pods-iQuotesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0A38BCA51C69C2880069F936 /* Info.plist */,
+				0A38BCA91C6BB9CA0069F936 /* README.md */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			files = (
 				0A38BC7E1C6940F80069F936 /* ViewController.swift in Sources */,
 				0A38BCA61C69C2880069F936 /* Quote.swift in Sources */,
+				0A38BCAA1C6BB9CA0069F936 /* README.md in Sources */,
 				0A38BC7C1C6940F80069F936 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
