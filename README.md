@@ -31,6 +31,7 @@ Status: in progress
 - https://github.com/mutualmobile/Counter
 - http://code.oursky.com/viper-ios-architecture-beyond-mega-viewcontroller/
 - https://www.objc.io/issues/13-architecture/viper/
+- https://github.com/JeanLebrument/iOSModulesArchitecture
 - http://stackoverflow.com/questions/28995640/questions-about-viper-clean-architecture
 - https://medium.com/brigade-engineering/brigades-experience-using-an-mvc-alternative-36ef1601a41f#.6be9f8wc5
 
