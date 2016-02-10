@@ -7,6 +7,10 @@ def testing_pods
     pod 'Nimble'
 end
 
+target 'iQuotes' do
+	pod 'Moya/ReactiveCocoa'
+end
+
 target 'iQuotesTests' do
     testing_pods
 end
