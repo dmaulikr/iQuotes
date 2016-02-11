@@ -1,7 +1,7 @@
 # iQuotes Project
 
 This project is a simple quote app like millions already exist.
-Quotes will be fetch via http://quotesondesign.com/the-api/
+Quotes will be fetch via http://quotesondesign.com/api-v4-0/
 
 Here's the things I will try in this project:
 
