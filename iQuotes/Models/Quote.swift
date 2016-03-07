@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Moya_SwiftyJSONMapper
+import SwiftyJSON
 
 typealias Rating = UInt
 
@@ -18,7 +20,7 @@ enum QuoteError: ErrorType {
 	
 }
 
-struct Quote {
+struct Quote: ALSwiftyJSONAble {
 	
 	let content: String
 	let author: String
@@ -33,6 +35,13 @@ struct Quote {
 		self.rating = rating
 		
 		try updateRating(rating)
+	}
+	
+	init?(jsonData: JSON){
+		let author = jsonData["title"].stringValue
+		let content = jsonData["content"].stringValue
+		
+		try? self.init(content: content, author: author)
 	}
 	
 	mutating func updateRating(rating: Rating) throws {
