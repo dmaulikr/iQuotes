@@ -9,6 +9,7 @@ end
 
 target 'iQuotes' do
 	pod 'Moya/ReactiveCocoa'
+	pod 'Moya-SwiftyJSONMapper/ReactiveCocoa'
 end
 
 target 'iQuotesTests' do
