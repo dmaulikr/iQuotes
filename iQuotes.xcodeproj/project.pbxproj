@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A0AE6E41C6BF6F000735926 /* QuoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE6E31C6BF6F000735926 /* QuoteAPI.swift */; };
+		0A0AE6E61C6D33D200735926 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AE6E51C6D33D200735926 /* Network.swift */; };
 		0A38BC7C1C6940F80069F936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BC7B1C6940F80069F936 /* AppDelegate.swift */; };
 		0A38BC7E1C6940F80069F936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BC7D1C6940F80069F936 /* ViewController.swift */; };
 		0A38BC811C6940F80069F936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A38BC7F1C6940F80069F936 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		0A0AE6E31C6BF6F000735926 /* QuoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteAPI.swift; sourceTree = "<group>"; };
+		0A0AE6E51C6D33D200735926 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		0A38BC781C6940F80069F936 /* iQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A38BC7B1C6940F80069F936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A38BC7D1C6940F80069F936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0AE6E31C6BF6F000735926 /* QuoteAPI.swift */,
+				0A0AE6E51C6D33D200735926 /* Network.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0AE6E61C6D33D200735926 /* Network.swift in Sources */,
 				0A38BC7E1C6940F80069F936 /* ViewController.swift in Sources */,
 				0A0AE6E41C6BF6F000735926 /* QuoteAPI.swift in Sources */,
 				0A38BCA61C69C2880069F936 /* Quote.swift in Sources */,
