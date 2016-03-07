@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import ReactiveCocoa
+import Moya
 
 class ViewController: UIViewController {
-
+	
+	@IBOutlet
+	var label: UILabel!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+		Network
+			.request(.RandomQuotes(count: 10))
+			.on(started: { self.label.text = "Loading..." })
+			.mapArray(Quote)
+			.on(failed: { _ in self.label.text = "Error" })
+			.map { $0.randomItem().content }
+			.observeOn(UIScheduler())
+			.startWithNext { self.label.text = $0 }
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-
-
+	
 }
-

@@ -16,6 +16,7 @@
 		0A38BC861C6940F90069F936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A38BC841C6940F90069F936 /* LaunchScreen.storyboard */; };
 		0A38BC911C6940F90069F936 /* QuoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BC901C6940F90069F936 /* QuoteSpec.swift */; };
 		0A38BCA61C69C2880069F936 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BCA31C69C2880069F936 /* Quote.swift */; };
+		0A707E831C8E35BB000E2625 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A707E821C8E35BB000E2625 /* ArrayExtensions.swift */; };
 		C6B27720B2A249E29EC253BF /* Pods_iQuotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6799238F2AF001085DA49DE4 /* Pods_iQuotes.framework */; };
 		E2BB1B0FC13040ABB8A9846D /* Pods_iQuotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F47B35D9D456F4566EF660 /* Pods_iQuotesTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		0A38BCA31C69C2880069F936 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		0A38BCA51C69C2880069F936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A38BCA91C6BB9CA0069F936 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		0A707E821C8E35BB000E2625 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		40F47B35D9D456F4566EF660 /* Pods_iQuotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iQuotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6799238F2AF001085DA49DE4 /* Pods_iQuotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iQuotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD93F09AFA6D4D4A6245D89 /* Pods-iQuotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iQuotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iQuotesTests/Pods-iQuotesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		0A38BC7A1C6940F80069F936 /* iQuotes */ = {
 			isa = PBXGroup;
 			children = (
+				0A707E811C8E35A5000E2625 /* Extensions */,
 				0A38BCA81C69C2B60069F936 /* Storyboards */,
 				0A38BC7B1C6940F80069F936 /* AppDelegate.swift */,
 				0A38BC7D1C6940F80069F936 /* ViewController.swift */,
@@ -149,6 +152,14 @@
 				0A38BC841C6940F90069F936 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0A707E811C8E35A5000E2625 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A707E821C8E35BB000E2625 /* ArrayExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7543D4771BF8BBD076017783 /* Frameworks */ = {
@@ -371,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0AE6E61C6D33D200735926 /* Network.swift in Sources */,
+				0A707E831C8E35BB000E2625 /* ArrayExtensions.swift in Sources */,
 				0A38BC7E1C6940F80069F936 /* ViewController.swift in Sources */,
 				0A0AE6E41C6BF6F000735926 /* QuoteAPI.swift in Sources */,
 				0A38BCA61C69C2880069F936 /* Quote.swift in Sources */,
