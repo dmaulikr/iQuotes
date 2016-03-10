@@ -11,7 +11,7 @@ import Nimble
 @testable import iQuotes
 
 func succeed() {
-	expect(true).to(equal(true))
+	expect(true) == true
 }
 
 class QuoteSpec: QuickSpec {
@@ -22,8 +22,8 @@ class QuoteSpec: QuickSpec {
 				it("should work with correct values") {
 					let quote = try! Quote(content: "Keep it simple and stupid or KISS", author: "Kevin")
 					
-					expect(quote.content).to(equal("Keep it simple and stupid or KISS"))
-					expect(quote.author).to(equal("Kevin"))
+					expect(quote.content) == "Keep it simple and stupid or KISS"
+					expect(quote.author) == "Kevin"
 				}
 				
 				context("should fail with empty") {
@@ -72,25 +72,22 @@ class QuoteSpec: QuickSpec {
 						try quote.updateRating(rating)
 						fail()
 					} catch QuoteError.IncorrectRating(let error) {
-						expect(error).to(equal("Rating must be between 0 and 5."))
+						expect(error) == "Rating must be between 0 and 5."
 					} catch {
 						fail()
 					}
 				}
 				
 				it("should work with correct value") {
-					succeedsToRate(0)
-					succeedsToRate(1)
-					succeedsToRate(2)
-					succeedsToRate(3)
-					succeedsToRate(4)
-					succeedsToRate(5)
+					for rate: Rating in 0...5 {
+						succeedsToRate(rate)
+					}
 				}
 				
 				it("should fail with too high value") {
 					failsToRate(6)
 					failsToRate(20)
-					failsToRate(99999)
+					failsToRate(Rating.max)
 				}
 			}
 		}
