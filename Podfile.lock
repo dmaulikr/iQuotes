@@ -1,33 +1,33 @@
 PODS:
-  - Alamofire (3.2.0)
-  - Moya (6.0.1):
-    - Moya/Core (= 6.0.1)
-  - Moya-SwiftyJSONMapper/Core (1.0.0):
-    - Moya (~> 6.0.0)
+  - Alamofire (3.2.1)
+  - Moya (6.1.3):
+    - Moya/Core (= 6.1.3)
+  - Moya-SwiftyJSONMapper/Core (1.0.2):
+    - Moya (= 6.1.3)
     - SwiftyJSON (~> 2.3.2)
-  - Moya-SwiftyJSONMapper/ReactiveCocoa (1.0.0):
+  - Moya-SwiftyJSONMapper/ReactiveCocoa (1.0.2):
     - Moya-SwiftyJSONMapper/Core
-    - Moya/ReactiveCocoa
+    - Moya/ReactiveCocoa (= 6.1.3)
     - ReactiveCocoa
-  - Moya/Core (6.0.1):
+  - Moya/Core (6.1.3):
     - Alamofire (~> 3.0)
     - Result (~> 1.0)
-  - Moya/ReactiveCocoa (6.0.1):
+  - Moya/ReactiveCocoa (6.1.3):
     - Moya/Core
-    - ReactiveCocoa (= 4.0.0-RC.2)
+    - ReactiveCocoa (= 4.0.0)
   - Nimble (3.1.0)
   - Quick (0.9.1)
-  - ReactiveCocoa (4.0.0-RC.2):
-    - ReactiveCocoa/UI (= 4.0.0-RC.2)
-    - Result (~> 1.0)
-  - ReactiveCocoa/Core (4.0.0-RC.2):
+  - ReactiveCocoa (4.0.0):
+    - ReactiveCocoa/UI (= 4.0.0)
+    - Result (~> 1.0.1)
+  - ReactiveCocoa/Core (4.0.0):
     - ReactiveCocoa/no-arc
-    - Result (~> 1.0)
-  - ReactiveCocoa/no-arc (4.0.0-RC.2):
-    - Result (~> 1.0)
-  - ReactiveCocoa/UI (4.0.0-RC.2):
+    - Result (~> 1.0.1)
+  - ReactiveCocoa/no-arc (4.0.0):
+    - Result (~> 1.0.1)
+  - ReactiveCocoa/UI (4.0.0):
     - ReactiveCocoa/Core
-    - Result (~> 1.0)
+    - Result (~> 1.0.1)
   - Result (1.0.2)
   - SwiftyJSON (2.3.2)
 
@@ -38,12 +38,12 @@ DEPENDENCIES:
   - Quick
 
 SPEC CHECKSUMS:
-  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
-  Moya: fcd80ed553234960a4d28529c184850a8fb43b80
-  Moya-SwiftyJSONMapper: 7a2371de67284a5b32113dc68b01f73c84af96cb
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  Moya: 26b290a8d675c167ea6229ba08e07dce562265a5
+  Moya-SwiftyJSONMapper: 1e7c3c5bea6974294b7a6c4511752898da1972f0
   Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
   Quick: a5221fc21788b6aeda934805e68b061839bc3165
-  ReactiveCocoa: 0d875167414bfe743bc5bf544ae5b05fddaf757d
+  ReactiveCocoa: 69be555be30674b07a86b60a91b855063841acc0
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
