@@ -8,6 +8,8 @@
 
 import Quick
 import Nimble
+import SwiftyJSON
+
 @testable import iQuotes
 
 func succeed() {
@@ -47,6 +49,54 @@ class QuoteSpec: QuickSpec {
 						} catch {
 							fail()
 						}
+					}
+				}
+				
+				context("with JSON") {
+					func createQuote(author author: String?, content: String?, shouldSucceed: Bool) {
+						var json = JSON([:])
+
+						if let author = author { json["title"] = JSON(author) }
+						if let content = content { json["content"] = JSON(content) }
+						
+						let quote = Quote(jsonData: json)
+						
+						if shouldSucceed {
+							expect(quote).toNot(beNil())
+						} else {
+							expect(quote).to(beNil())
+						}
+					}
+					
+					it("should work with correct random (A) JSON") {
+						createQuote(author: "Kevin", content: "Some quote content", shouldSucceed: true)
+					}
+					
+					it("should work with correct random (B) JSON") {
+						createQuote(author: "Gérard", content: "Another quote!", shouldSucceed: true)
+					}
+					
+					it("should failed with wrong keys in JSON") {
+						let json = JSON(["key": "value"])
+						let quote = Quote(jsonData: json)
+						
+						expect(quote).to(beNil())
+					}
+					
+					it("should failed with empty values in JSON") {
+						createQuote(author: "", content: "", shouldSucceed: false)
+					}
+					
+					it("should failed with missing title key in JSON") {
+						createQuote(author: nil, content: "To be or not to be?", shouldSucceed: false)
+					}
+					
+					it("should failed with missing content key in JSON") {
+						createQuote(author: "Juan", content: nil, shouldSucceed: false)
+					}
+					
+					it("should failed with no keys in JSON") {
+						createQuote(author: nil, content: nil, shouldSucceed: false)
 					}
 				}
 			}

@@ -37,9 +37,11 @@ struct Quote: ALSwiftyJSONAble {
 		try updateRating(rating)
 	}
 	
-	init?(jsonData: JSON){
-		let author = jsonData["title"].stringValue
-		let content = jsonData["content"].stringValue
+	init?(jsonData: JSON) {
+		guard let
+			author = jsonData["title"].string,
+			content = jsonData["content"].string
+			else { return nil }
 		
 		try? self.init(content: content, author: author)
 	}
