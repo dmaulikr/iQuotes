@@ -17,8 +17,8 @@
 		0A38BC911C6940F90069F936 /* QuoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BC901C6940F90069F936 /* QuoteSpec.swift */; };
 		0A38BCA61C69C2880069F936 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38BCA31C69C2880069F936 /* Quote.swift */; };
 		0A707E831C8E35BB000E2625 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A707E821C8E35BB000E2625 /* ArrayExtensions.swift */; };
+		0AD7F56A1C92069E00B2FCAF /* Pods_iQuotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD7F5691C92069E00B2FCAF /* Pods_iQuotesTests.framework */; };
 		C6B27720B2A249E29EC253BF /* Pods_iQuotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6799238F2AF001085DA49DE4 /* Pods_iQuotes.framework */; };
-		E2BB1B0FC13040ABB8A9846D /* Pods_iQuotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F47B35D9D456F4566EF660 /* Pods_iQuotesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +47,7 @@
 		0A38BCA51C69C2880069F936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A38BCA91C6BB9CA0069F936 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		0A707E821C8E35BB000E2625 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		0AD7F5691C92069E00B2FCAF /* Pods_iQuotesTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_iQuotesTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_iQuotesTests.framework"; sourceTree = "<group>"; };
 		40F47B35D9D456F4566EF660 /* Pods_iQuotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iQuotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6799238F2AF001085DA49DE4 /* Pods_iQuotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iQuotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD93F09AFA6D4D4A6245D89 /* Pods-iQuotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iQuotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iQuotesTests/Pods-iQuotesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2BB1B0FC13040ABB8A9846D /* Pods_iQuotesTests.framework in Frameworks */,
+				0AD7F56A1C92069E00B2FCAF /* Pods_iQuotesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +166,7 @@
 		7543D4771BF8BBD076017783 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AD7F5691C92069E00B2FCAF /* Pods_iQuotesTests.framework */,
 				40F47B35D9D456F4566EF660 /* Pods_iQuotesTests.framework */,
 				6799238F2AF001085DA49DE4 /* Pods_iQuotes.framework */,
 			);
@@ -514,6 +516,10 @@
 			baseConfigurationReference = EB6719389B81036AA9858C49 /* Pods-iQuotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/iQuotes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.hirsch.iQuotes;
@@ -526,6 +532,10 @@
 			baseConfigurationReference = DEFD61C15F25FF4B657D7A39 /* Pods-iQuotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/iQuotes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.hirsch.iQuotes;
@@ -538,6 +548,10 @@
 			baseConfigurationReference = E6EAB653B85F4C6B6DD44998 /* Pods-iQuotesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = iQuotesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.hirsch.iQuotesTests;
@@ -551,6 +565,10 @@
 			baseConfigurationReference = CFD93F09AFA6D4D4A6245D89 /* Pods-iQuotesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = iQuotesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.hirsch.iQuotesTests;
