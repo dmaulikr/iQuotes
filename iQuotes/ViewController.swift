@@ -13,7 +13,7 @@ import Moya
 class ViewController: UIViewController {
 	
 	@IBOutlet
-	var label: UILabel!
+	private var label: UILabel!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()

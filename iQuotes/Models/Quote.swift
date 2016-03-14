@@ -10,9 +10,9 @@ import Foundation
 import Moya_SwiftyJSONMapper
 import SwiftyJSON
 
-typealias Rating = UInt
+public typealias Rating = UInt
 
-enum QuoteError: ErrorType {
+public enum QuoteError: ErrorType {
 	
 	case MissingContent
 	case MissingAuthor
@@ -20,13 +20,13 @@ enum QuoteError: ErrorType {
 	
 }
 
-struct Quote: ALSwiftyJSONAble {
+public struct Quote: ALSwiftyJSONAble {
 	
-	let content: String
-	let author: String
-	var rating: Rating
+	public let content: String
+	public let author: String
+	public var rating: Rating
 	
-	init(content: String, author: String, rating: Rating = 0) throws {
+	public init(content: String, author: String, rating: Rating = 0) throws {
 		guard !content.isEmpty else { throw QuoteError.MissingContent }
 		guard !author.isEmpty else { throw QuoteError.MissingAuthor }
 		
@@ -37,7 +37,7 @@ struct Quote: ALSwiftyJSONAble {
 		try updateRating(rating)
 	}
 	
-	init?(jsonData: JSON) {
+	public init?(jsonData: JSON) {
 		guard let
 			author = jsonData["title"].string,
 			content = jsonData["content"].string
@@ -46,7 +46,7 @@ struct Quote: ALSwiftyJSONAble {
 		try? self.init(content: content, author: author)
 	}
 	
-	mutating func updateRating(rating: Rating) throws {
+	public mutating func updateRating(rating: Rating) throws {
 		guard rating >= 0 && rating <= 5 else {
 			throw QuoteError.IncorrectRating("Rating must be between 0 and 5.")
 		}

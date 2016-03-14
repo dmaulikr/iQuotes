@@ -13,11 +13,11 @@ import Moya_SwiftyJSONMapper
 import SwiftyJSON
 import Result
 
-struct Network {
+public struct Network {
 	
 	static private let provider = ReactiveCocoaMoyaProvider<QuoteAPI>()
 	
-	static func request(target: QuoteAPI) -> SignalProducer<Moya.Response, Moya.Error> {
+	public static func request(target: QuoteAPI) -> SignalProducer<Moya.Response, Moya.Error> {
 		return provider
 			.request(target)
 			.filterSuccessfulStatusCodes()
