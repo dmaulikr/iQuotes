@@ -12,10 +12,6 @@ import SwiftyJSON
 
 @testable import iQuotes
 
-func succeed() {
-	expect(true) == true
-}
-
 class QuoteSpec: QuickSpec {
 	
 	override func spec() {
@@ -30,25 +26,13 @@ class QuoteSpec: QuickSpec {
 				
 				context("should fail with empty") {
 					it("content") {
-						do {
-							_ = try Quote(content: "", author: "Kevin")
-							fail()
-						} catch QuoteError.MissingContent {
-							succeed()
-						} catch {
-							fail()
-						}
+						expect { try Quote(content: "", author: "Kevin") }
+							.to(throwError(QuoteError.MissingContent))
 					}
 					
 					it("author") {
-						do {
-							_ = try Quote(content: "Keep it simple and stupid or KISS", author: "")
-							fail()
-						} catch QuoteError.MissingAuthor {
-							succeed()
-						} catch {
-							fail()
-						}
+						expect { try Quote(content: "Keep it simple and stupid or KISS", author: "") }
+							.to(throwError(QuoteError.MissingAuthor))
 					}
 				}
 				
@@ -109,23 +93,13 @@ class QuoteSpec: QuickSpec {
 				}
 				
 				func succeedsToRate(rating: Rating) {
-					do {
-						try quote.updateRating(rating)
-						succeed()
-					} catch {
-						fail()
-					}
+					expect { try quote.updateRating(rating) }
+						.toNot(throwError())
 				}
 				
 				func failsToRate(rating: Rating) {
-					do {
-						try quote.updateRating(rating)
-						fail()
-					} catch QuoteError.IncorrectRating(let error) {
-						expect(error) == "Rating must be between 0 and 5."
-					} catch {
-						fail()
-					}
+					expect { try quote.updateRating(rating) }
+						.to(throwError(QuoteError.IncorrectRating("Rating must be between 0 and 5.")))
 				}
 				
 				it("should work with correct value") {
