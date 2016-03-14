@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+		
 		Network
 			.request(.RandomQuotes(count: 10))
 			.on(started: { self.label.text = "Loading..." })
