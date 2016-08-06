@@ -37,8 +37,8 @@ Status: in progress
 
 Here's my todo list of things I would want to try also:
 
-- [ ] [SwiftLint](https://github.com/realm/SwiftLint)
-- [ ] [SwiftGen](https://github.com/AliSoftware/SwiftGen)
-- [ ] [Alamofire](https://github.com/Alamofire/Alamofire)
-- [ ] [Moya](https://github.com/Moya/Moya)
-- [ ] [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)
+- [x] [SwiftLint](https://github.com/realm/SwiftLint)
+- [x] [SwiftGen](https://github.com/AliSoftware/SwiftGen)
+- [x] [Alamofire](https://github.com/Alamofire/Alamofire)
+- [x] [Moya](https://github.com/Moya/Moya)
+- [x] [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)
